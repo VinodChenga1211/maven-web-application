@@ -51,7 +51,7 @@ def slacknotification(String buildStatus = 'STARTED') {
     colorCode = '#FFFF00'
   } else if (buildStatus == 'SUCCESS') {
     color = 'GREEN'
-    colorCode = '#023020'
+    colorCode = '#2cae6b'
   } else {
     color = 'RED'
     colorCode = '#FF0000'
