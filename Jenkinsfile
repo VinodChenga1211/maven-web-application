@@ -40,8 +40,8 @@ def slacknotification(String buildStatus = 'STARTED') {
   buildStatus =  buildStatus ?: 'SUCCESS'
 
   // Default values
-  def colorName = 'RED'
-  def colorCode = '#FF0000'
+  def colorName = 'ORANGE'
+  def colorCode = '#FF8C00'
   def subject = "${buildStatus}: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]'"
   def summary = "${subject} (${env.BUILD_URL})"
 
