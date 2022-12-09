@@ -29,7 +29,7 @@ node{
 		currentBuild.result ="FAILURE"
 		throw e
 	}finally{
-		notifyBuild(currentBuild.result)
+		slacknotification(currentBuild.result)
 	}
 		
 } //node closing
